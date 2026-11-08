@@ -125,9 +125,27 @@ def slugify(name: str) -> str:
 EFNET_CARD_URL = "https://edisonformat.net/card?name="
 
 # Cards that edisonformat.net looks up under a different name.
+#
+# The site doesn't redirect or need exact names: its card page script
+# (js/card.js) shows the first card in its list whose name starts with the
+# `name` in the URL, ignoring case, then rewrites the URL to that card's full
+# name. So a card only needs an entry here when the site's name doesn't start
+# with ours.
 EFNET_URL_NAME_MAP: dict[str, str] = {
     "Black Skull Dragon":  "B. Skull Dragon (Archfiend)",
     "Cipher Soldier":      "Kinetic Soldier (Cipher Soldier)",
+    "Level Down!?":        "Level Down",
+    # The site lists these "Archfiend" cards with an "(Archfiend)" suffix.
+    # The plain names already start the site's names, so the links work
+    # without these entries. Uncomment them if the site ever starts needing
+    # exact names.
+    # "Axe of Despair":      "Axe of Despair (Archfiend)",
+    # "Beast of Talwar":     "Beast of Talwar (Archfiend)",
+    # "Fiend Skull Dragon":  "Fiend Skull Dragon (Archfiend)",
+    # "Lesser Fiend":        "Lesser Fiend (Archfiend)",
+    # "Shadow Tamer":        "Shadow Tamer (Archfiend)",
+    # "Summoned Skull":      "Summoned Skull (Archfiend)",
+    # "Toon Summoned Skull": "Toon Summoned Skull (Archfiend)",
 }
 
 
