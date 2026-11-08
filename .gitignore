@@ -4,5 +4,6 @@ venv/
 docs/build
 build
 _build/
+_build_pydata/
 __pycache__/
 scrape/docs/source/cards/

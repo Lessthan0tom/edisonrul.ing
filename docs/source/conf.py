@@ -17,7 +17,6 @@ version = '0.0.2'
 extensions = [
     'myst_parser',
     'sphinx_last_updated_by_git',
-    'sphinx_immaterial'
 ]
 myst_enable_extensions = [
     "amsmath",
@@ -44,57 +43,40 @@ suppress_warnings = ['epub.unknown_project_files']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = "sphinx_immaterial"
+html_theme = "pydata_sphinx_theme"
 html_theme_options = {
-    "edit_uri": "blob/main/docs/source",
-    "repo_url": "https://github.com/vivaria/edisonrul.ing",
-    "repo_name": "edisonrul.ing",
-    "icon": {
-        "repo": "fontawesome/brands/github",
-        "edit": "material/file-edit-outline",
-        "logo": "material/cards-playing"
+    # Show search results while typing, like the original theme
+    "search_as_you_type": True,
+    # The top bar is brown in both modes, so the same white logo works for both
+    "logo": {
+        "text": "Edison Rulings",
+        "image_light": "_static/img/cards-playing.svg",
+        "image_dark": "_static/img/cards-playing.svg",
     },
-    "features": [
-        "content.action.view",
-        "content.action.edit",
-        "navigation.expand",
-        "navigation.footer"
-    ],
-    "font": {
-        "text": "Funnel Sans",  # used for all the pages' text
-        "code": "Roboto Mono"  # used for literal code blocks
-    },
-    "palette": [
-        {
-            "media": "(prefers-color-scheme: light)",
-            "scheme": "default",
-            "primary": "brown",
-            "toggle": {
-                "icon": "material/weather-night",
-                "name": "Switch to dark mode",
-            }
-        },
-        {
-            "media": "(prefers-color-scheme: dark)",
-            "scheme": "slate",
-            "primary": "brown",
-            "toggle": {
-                "icon": "material/weather-sunny",
-                "name": "Switch to light mode",
-            }
-        },
-    ]
+    # Put all the letter pages in one "Cards" menu in the top bar
+    "header_links_before_dropdown": 0,
+    "header_dropdown_text": "Cards",
+    # Only list the current letter's cards in the sidebar. Listing more on
+    # every page makes pages much larger and the build very slow.
+    "collapse_navigation": True,
+    "github_url": "https://github.com/vivaria/edisonrul.ing",
+    "use_edit_page_button": True,
 }
 html_title = 'Edison Rulings'
 html_favicon = '_static/img/favicon.ico'
 html_static_path = ['_static']
-html_css_files = ['css/custom.css']
+html_css_files = [
+    # The fonts the site used with sphinx-immaterial
+    'https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300;0,400;0,700;1,400'
+    '&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap',
+    'css/custom.css',
+]
 html_context = {
-    'display_github': True,
+    # Used by PyData for "Edit on GitHub" links
     'github_user': 'vivaria',
     'github_repo': 'edisonrul.ing',
-    'conf_py_path': '/docs/source/',
-    'commit': 'main',
+    'github_version': 'main',
+    'doc_path': 'docs/source',
     'downloads': [
         ('pdf', 'https://edisonrul.ing/_/downloads/en/latest/pdf/'),
         ('epub', 'https://edisonrul.ing/_/downloads/en/latest/epub/'),

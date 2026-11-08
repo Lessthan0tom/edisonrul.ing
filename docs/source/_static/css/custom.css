@@ -9,3 +9,120 @@ p.insipid-icon {
 readthedocs-flyout {
     display: none;
 }
+
+/* Colours from the site's original sphinx-immaterial "brown" palette */
+html[data-theme="light"] {
+    --pst-color-primary: #795649;
+    --pst-color-secondary: #526cfe;
+    --pst-color-link: #795649;
+    --pst-color-link-hover: #526cfe;
+}
+
+html[data-theme="dark"] {
+    --pst-color-primary: #c1775c;
+    --pst-color-secondary: #526cfe;
+    --pst-color-link: #c1775c;
+    --pst-color-link-hover: #526cfe;
+    --pst-color-background: hsl(225 15% 14%);
+}
+
+/* The fonts the site used with sphinx-immaterial (loaded in conf.py), and
+   its 48px top bar */
+html {
+    --pst-font-family-base: "Funnel Sans", var(--pst-font-family-base-system);
+    --pst-font-family-heading: "Funnel Sans", var(--pst-font-family-base-system);
+    --pst-font-family-monospace: "Roboto Mono", var(--pst-font-family-monospace-system);
+    --pst-header-height: 48px;
+}
+
+/* Heading sizes and light weights like the original */
+:root {
+    --pst-font-size-h1: 32px;
+    --pst-font-size-h2: 25px;
+    --pst-font-size-h3: 20px;
+    --pst-font-weight-heading: 300;
+}
+
+.bd-article h3 {
+    font-weight: 400;
+}
+
+/* Brown 48px top bar in light and dark mode, like the original */
+.bd-header {
+    background-color: #795649 !important;
+}
+
+.bd-header .bd-header__inner {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* 24px logo with the title next to it */
+.bd-header .navbar-brand {
+    gap: 2rem;
+}
+
+.bd-header .navbar-brand img {
+    width: 24px;
+    height: 24px;
+}
+
+.bd-header .navbar-brand p,
+.bd-header .navbar-brand:hover {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* White text and icons on the brown bar */
+.bd-header ul.navbar-nav > li.nav-item > .nav-link,
+.bd-header ul.navbar-nav > li.nav-item > .nav-link:hover,
+.bd-header ul.navbar-nav > li.nav-item.dropdown > .dropdown-toggle,
+.bd-header ul.navbar-nav > li.nav-item.dropdown > .dropdown-toggle:hover,
+.bd-header .theme-switch-button,
+.bd-header .theme-switch-button:hover,
+.bd-header .navbar-icon-links a,
+.bd-header .navbar-icon-links a:hover {
+    color: #fff;
+}
+
+.bd-header ul.navbar-nav > li.nav-item > .nav-link:hover:before {
+    border-bottom-color: #fff;
+}
+
+/* Search box: a dark translucent strip, like the original */
+.bd-header .search-button-field {
+    height: 36px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.26);
+    border: 0;
+    border-radius: 2px;
+}
+
+.bd-header .search-button-field:hover {
+    background-color: rgba(0, 0, 0, 0.36);
+    box-shadow: none;
+}
+
+.bd-header .search-button-field i {
+    color: #fff;
+}
+
+/* Full-width search strip only on wide screens (960px is where PyData
+   switches to its phone layout, with a compact search button) */
+@media (min-width: 960px) {
+    .bd-header .search-button-field {
+        min-width: 234px;
+    }
+}
+
+/* Narrower gap between logo and title on phones */
+@media (max-width: 959.98px) {
+    .bd-header .navbar-brand {
+        gap: 0.75rem;
+    }
+}
+
+/* The original has no shortcut hint; Ctrl+K and / still open search */
+.bd-header .search-button__kbd-shortcut {
+    display: none;
+}

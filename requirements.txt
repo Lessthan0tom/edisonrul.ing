@@ -1,5 +1,5 @@
 # Docs build (Sphinx, see docs/source/conf.py)
 myst-parser<5
 sphinx<9
-sphinx_immaterial<0.14
+pydata-sphinx-theme==0.24.0
 sphinx-last-updated-by-git<0.4
