@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Winged%20Dragon,%20Guardian%20of%20the%20Fortress%20#](https://edisonformat.net/card?name=Winged%20Dragon,%20Guardian%20of%20the%20Fortress%20#)
+Source: [https://edisonformat.net/card?name=Winged%20Dragon,%20Guardian%20of%20the%20Fortress%202](https://edisonformat.net/card?name=Winged%20Dragon,%20Guardian%20of%20the%20Fortress%202)
 
 ### Edison-Accurate PSCT
 

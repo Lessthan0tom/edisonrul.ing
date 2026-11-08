@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Hero's%20Rule](https://edisonformat.net/card?name=Hero's%20Rule)
+Source: [https://edisonformat.net/card?name=Hero's%20Rule%202](https://edisonformat.net/card?name=Hero's%20Rule%202)
 
 ### Edison-Accurate PSCT
 

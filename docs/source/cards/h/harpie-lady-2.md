@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Harpie%20Lady](https://edisonformat.net/card?name=Harpie%20Lady)
+Source: [https://edisonformat.net/card?name=Harpie%20Lady%202](https://edisonformat.net/card?name=Harpie%20Lady%202)
 
 ### Edison-Accurate PSCT
 

@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Master%20&%20Expert](https://edisonformat.net/card?name=Master%20&%20Expert)
+Source: [https://edisonformat.net/card?name=Master%20%26%20Expert](https://edisonformat.net/card?name=Master%20%26%20Expert)
 
 ### Edison-Accurate PSCT
 

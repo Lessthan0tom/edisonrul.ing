@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Double%20Tool%20C&D](https://edisonformat.net/card?name=Double%20Tool%20C&D)
+Source: [https://edisonformat.net/card?name=Double%20Tool%20C%26D](https://edisonformat.net/card?name=Double%20Tool%20C%26D)
 
 ### Edison-Accurate PSCT
 

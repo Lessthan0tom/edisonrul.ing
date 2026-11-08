@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=M-Warrior%20#](https://edisonformat.net/card?name=M-Warrior%20#)
+Source: [https://edisonformat.net/card?name=M-Warrior%202](https://edisonformat.net/card?name=M-Warrior%202)
 
 ### Edison-Accurate PSCT
 

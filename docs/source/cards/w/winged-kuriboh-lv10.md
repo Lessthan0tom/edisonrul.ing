@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Winged%20Kuriboh%20LV1](https://edisonformat.net/card?name=Winged%20Kuriboh%20LV1)
+Source: [https://edisonformat.net/card?name=Winged%20Kuriboh%20LV10](https://edisonformat.net/card?name=Winged%20Kuriboh%20LV10)
 
 ### Edison-Accurate PSCT
 

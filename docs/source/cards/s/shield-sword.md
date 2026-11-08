@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Shield%20&%20Sword](https://edisonformat.net/card?name=Shield%20&%20Sword)
+Source: [https://edisonformat.net/card?name=Shield%20%26%20Sword](https://edisonformat.net/card?name=Shield%20%26%20Sword)
 
 ### Edison-Accurate PSCT
 

@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Cyber%20Ogre](https://edisonformat.net/card?name=Cyber%20Ogre)
+Source: [https://edisonformat.net/card?name=Cyber%20Ogre%202](https://edisonformat.net/card?name=Cyber%20Ogre%202)
 
 ### Edison-Accurate PSCT
 

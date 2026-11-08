@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Twin%20Long%20Rods%20#](https://edisonformat.net/card?name=Twin%20Long%20Rods%20#)
+Source: [https://edisonformat.net/card?name=Twin%20Long%20Rods%202](https://edisonformat.net/card?name=Twin%20Long%20Rods%202)
 
 ### Edison-Accurate PSCT
 

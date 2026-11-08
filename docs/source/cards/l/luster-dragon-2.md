@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Luster%20Dragon%20#](https://edisonformat.net/card?name=Luster%20Dragon%20#)
+Source: [https://edisonformat.net/card?name=Luster%20Dragon%202](https://edisonformat.net/card?name=Luster%20Dragon%202)
 
 ### Edison-Accurate PSCT
 

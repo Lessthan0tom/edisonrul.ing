@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Steel%20Ogre%20Grotto%20#1](https://edisonformat.net/card?name=Steel%20Ogre%20Grotto%20#1)
+Source: [https://edisonformat.net/card?name=Steel%20Ogre%20Grotto%201](https://edisonformat.net/card?name=Steel%20Ogre%20Grotto%201)
 
 ### Edison-Accurate PSCT
 

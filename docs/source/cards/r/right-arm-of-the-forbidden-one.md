@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Right%20Arm%20of%20the%20forbidden%20one](https://edisonformat.net/card?name=Right%20Arm%20of%20the%20forbidden%20one)
+Source: [https://edisonformat.net/card?name=Right%20Arm%20of%20the%20Forbidden%20One](https://edisonformat.net/card?name=Right%20Arm%20of%20the%20Forbidden%20One)
 
 ### Edison-Accurate PSCT
 

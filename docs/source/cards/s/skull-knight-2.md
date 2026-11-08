@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Skull%20Knight%20#](https://edisonformat.net/card?name=Skull%20Knight%20#)
+Source: [https://edisonformat.net/card?name=Skull%20Knight%202](https://edisonformat.net/card?name=Skull%20Knight%202)
 
 ### Edison-Accurate PSCT
 

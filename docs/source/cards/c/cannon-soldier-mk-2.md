@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Cannon%20Soldier%20MK-](https://edisonformat.net/card?name=Cannon%20Soldier%20MK-)
+Source: [https://edisonformat.net/card?name=Cannon%20Soldier%20MK-2](https://edisonformat.net/card?name=Cannon%20Soldier%20MK-2)
 
 ### Edison-Accurate PSCT
 

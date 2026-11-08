@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Darkfire%20Soldier%20#1](https://edisonformat.net/card?name=Darkfire%20Soldier%20#1)
+Source: [https://edisonformat.net/card?name=Darkfire%20Soldier%201](https://edisonformat.net/card?name=Darkfire%20Soldier%201)
 
 ### Edison-Accurate PSCT
 

@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Gift%20of%20the%20Mystical%20Elf](https://edisonformat.net/card?name=Gift%20of%20the%20Mystical%20Elf)
+Source: [https://edisonformat.net/card?name=Gift%20of%20The%20Mystical%20Elf](https://edisonformat.net/card?name=Gift%20of%20The%20Mystical%20Elf)
 
 ### Edison-Accurate PSCT
 

@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Success%20Probability](https://edisonformat.net/card?name=Success%20Probability)
+Source: [https://edisonformat.net/card?name=Success%20Probability%200%25](https://edisonformat.net/card?name=Success%20Probability%200%25)
 
 ### Edison-Accurate PSCT
 

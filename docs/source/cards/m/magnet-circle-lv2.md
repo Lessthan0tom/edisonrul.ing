@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Magnet%20Circle%20LV](https://edisonformat.net/card?name=Magnet%20Circle%20LV)
+Source: [https://edisonformat.net/card?name=Magnet%20Circle%20LV2](https://edisonformat.net/card?name=Magnet%20Circle%20LV2)
 
 ### Edison-Accurate PSCT
 

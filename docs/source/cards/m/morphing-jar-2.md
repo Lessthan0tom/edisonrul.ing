@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Morphing%20Jar%20#](https://edisonformat.net/card?name=Morphing%20Jar%20#)
+Source: [https://edisonformat.net/card?name=Morphing%20Jar%202](https://edisonformat.net/card?name=Morphing%20Jar%202)
 
 ### Edison-Accurate PSCT
 
@@ -15,7 +15,7 @@ If this card is flipped face-up and destroyed by battle:
 *   This card does not count towards the number of cards that will be excavated.
 
 Tokens on the field:
-*   Are destroyed instead of being shuffled into the Deck.
+*   Are removed from the field, but are not treated as destroyed.
 *   Do not count towards the number of cards that will be excavated.
 
 Trap Monsters

@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Ray%20&%20Temperature](https://edisonformat.net/card?name=Ray%20&%20Temperature)
+Source: [https://edisonformat.net/card?name=Ray%20%26%20Temperature](https://edisonformat.net/card?name=Ray%20%26%20Temperature)
 
 ### Edison-Accurate PSCT
 

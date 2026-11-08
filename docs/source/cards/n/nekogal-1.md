@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Nekogal%20#1](https://edisonformat.net/card?name=Nekogal%20#1)
+Source: [https://edisonformat.net/card?name=Nekogal%201](https://edisonformat.net/card?name=Nekogal%201)
 
 ### Edison-Accurate PSCT
 

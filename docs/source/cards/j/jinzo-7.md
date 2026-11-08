@@ -2,7 +2,7 @@
 
 ## Edisonformat.net (Revised, Post-UTW Rulings)
 
-Source: [https://edisonformat.net/card?name=Jinzo%20#7](https://edisonformat.net/card?name=Jinzo%20#7)
+Source: [https://edisonformat.net/card?name=Jinzo%207](https://edisonformat.net/card?name=Jinzo%207)
 
 ### Edison-Accurate PSCT
 
