@@ -3,6 +3,8 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import os
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -62,6 +64,9 @@ html_theme_options = {
     "github_url": "https://github.com/vivaria/edisonrul.ing",
     "use_edit_page_button": True,
 }
+# Rank cards whose name matches the search first. Sphinx opens this path
+# from the folder the build is run in, so give it the full path.
+html_search_scorer = os.path.join(os.path.dirname(__file__), 'search_scorer.js')
 html_title = 'Edison Rulings'
 html_favicon = '_static/img/favicon.ico'
 html_static_path = ['_static']
