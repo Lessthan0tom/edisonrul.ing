@@ -51,6 +51,7 @@ OUTPUT_ROOT          = Path("docs/source/cards").resolve()
 CARDPOOL_CSV_DEFAULT = "edison_cardpool.csv"
 PAGE_LOAD_TIMEOUT    = 30_000   # ms  (efcom)
 JS_SETTLE_MS         =  2_000   # ms  (efcom)
+EFCOM_FETCH_ATTEMPTS =  3
 
 # ---------------------------------------------------------------------------
 # Errata / name-mapping table
@@ -446,11 +447,17 @@ async def fetch_efcom_cards(skip: bool = False) -> dict[str, EfcomData]:
 
         for url in EFCOM_URLS:
             print(f"[efcom] Fetching {url}")
-            try:
-                soup = await _efcom_fetch_page(page, url)
-            except Exception as exc:
-                print(f"[efcom]   ERROR: {exc}")
-                continue
+            # A page that fails to load would otherwise wipe the efcom section
+            # of every card on it, so retry, then abort before writing anything.
+            for attempt in range(1, EFCOM_FETCH_ATTEMPTS + 1):
+                try:
+                    soup = await _efcom_fetch_page(page, url)
+                    break
+                except Exception as exc:
+                    print(f"[efcom]   ERROR (attempt {attempt}/{EFCOM_FETCH_ATTEMPTS}): {exc}")
+            else:
+                await browser.close()
+                raise SystemExit(f"[efcom] Could not load {url}; aborting without writing any files.")
 
             rulings_html = _efcom_extract_rulings_html(soup)
             markdown     = _efcom_html_to_markdown(rulings_html)
