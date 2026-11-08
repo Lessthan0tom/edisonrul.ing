@@ -1,0 +1,6 @@
+# fetch.py
+beautifulsoup4
+markdownify
+pandas
+playwright
+tqdm
