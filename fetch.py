@@ -288,6 +288,25 @@ def _efcom_extract_rulings_html(soup: BeautifulSoup) -> str:
         if div.find("strong"):
             for tag in div.find_all(["script", "style"]):
                 tag.decompose()
+            # efcom wraps some words ("Card", "Deck", "calculation", ...) in
+            # links to "#", on different pages each load. Replace them with
+            # their plain text so they don't become `[Card](#)`, without
+            # doubling up the spaces around them.
+            for a in div.find_all("a", href=True):
+                if a["href"].strip() != "#":
+                    continue
+                raw = a.get_text()
+                text = raw.strip()  # also strips non-breaking spaces
+                prev, nxt = a.previous_sibling, a.next_sibling
+                prev = prev if isinstance(prev, str) else ""
+                nxt = nxt if isinstance(nxt, str) else ""
+                # Keep one plain space only where the link's own leading /
+                # trailing space was separating it from an adjacent word.
+                if raw[:1].isspace() and prev and prev[-1] not in " \t\n \"“'‘(":
+                    text = " " + text
+                if raw[-1:].isspace() and nxt and nxt[0] not in " \t\n \"”'’).,;:!?":
+                    text = text + " "
+                a.replace_with(text)
             return str(div)
     raise ValueError("Could not find rulings in efcom html.")
 
