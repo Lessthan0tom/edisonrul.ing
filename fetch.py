@@ -24,6 +24,7 @@ import tqdm
 import unicodedata
 from pathlib import Path
 from dataclasses import dataclass
+from urllib.parse import quote
 
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -119,6 +120,31 @@ def slugify(name: str) -> str:
     s = re.sub(r"[\s_]+", "-", s).strip("-")
     s = re.sub(r"-{2,}", "-", s)
     return s
+
+
+EFNET_CARD_URL = "https://edisonformat.net/card?name="
+
+# Cards that edisonformat.net looks up under a different name.
+EFNET_URL_NAME_MAP: dict[str, str] = {
+    "Black Skull Dragon":  "B. Skull Dragon (Archfiend)",
+    "Cipher Soldier":      "Kinetic Soldier (Cipher Soldier)",
+}
+
+
+def efnet_url(name: str) -> str:
+    """
+    Build the edisonformat.net card page URL for a card name.
+
+    The site's lookup names leave out double quotes and use a space in
+    place of "/".
+    """
+    name = EFNET_URL_NAME_MAP.get(name, name)
+    name = name.replace('"', "").replace("/", " ")
+    name = re.sub(r"\s+", " ", name).strip()
+    # Non-ASCII letters (Ü, α) stay as-is so the link text stays readable.
+    return EFNET_CARD_URL + "".join(
+        c if ord(c) > 127 else quote(c, safe="!'(),:=?#&") for c in name
+    )
 
 
 def resolve_slug(raw_slug: str) -> str:
@@ -465,9 +491,10 @@ def load_efnet_cards(
                 print(f"Failed to decode {path}")
                 continue
 
+        card_name = raw.get("name", card.get("card_name", slug))
         results[slug] = EfnetData(
-            card_name=raw.get("name", card.get("card_name", slug)),
-            url=card["url_efnet"],
+            card_name=card_name,
+            url=efnet_url(card_name),
             psct=_efnet_field(raw, "PSCT"),
             rulings=_efnet_field(raw, "Rulings"),
         )
