@@ -135,15 +135,15 @@ def efnet_url(name: str) -> str:
     """
     Build the edisonformat.net card page URL for a card name.
 
-    The site's lookup names leave out double quotes and use a space in
-    place of "/".
+    The site's lookup names leave out double quotes and "#" and use a space
+    in place of "/" (e.g. "Jinzo #7" -> "Jinzo 7").
     """
     name = EFNET_URL_NAME_MAP.get(name, name)
-    name = name.replace('"', "").replace("/", " ")
+    name = name.replace('"', "").replace("#", "").replace("/", " ")
     name = re.sub(r"\s+", " ", name).strip()
     # Non-ASCII letters (Ü, α) stay as-is so the link text stays readable.
     return EFNET_CARD_URL + "".join(
-        c if ord(c) > 127 else quote(c, safe="!'(),:=?#&") for c in name
+        c if ord(c) > 127 else quote(c, safe="!'(),:=?&") for c in name
     )
 
 
