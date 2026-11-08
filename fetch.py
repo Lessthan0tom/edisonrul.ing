@@ -143,7 +143,7 @@ def efnet_url(name: str) -> str:
     name = re.sub(r"\s+", " ", name).strip()
     # Non-ASCII letters (Ü, α) stay as-is so the link text stays readable.
     return EFNET_CARD_URL + "".join(
-        c if ord(c) > 127 else quote(c, safe="!'(),:=?&") for c in name
+        c if ord(c) > 127 else quote(c, safe="!'(),:=?") for c in name
     )
 
 
